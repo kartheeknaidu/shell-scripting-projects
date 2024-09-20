@@ -1,4 +1,12 @@
 #!/bin/bash
+###################################
+#
+#
+#
+#
+################################
+
+helper()
 
 # GitHub API URL
 API_URL="https://api.github.com"
@@ -35,6 +43,15 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
+
+# Function to check passing 2 or required arguments.
+function helper{
+  expetced_cmd_args=2
+  if [ $# -ne expetced_cmd_args ]; then
+   echo "Please execute the script with required cmd args"
+   echo "asd"
+}
+
 
 # Main script
 
